@@ -2,6 +2,7 @@ import { View, StyleSheet, FlatList } from "react-native";
 import { router, useNavigation } from "expo-router";
 import { useEffect, useState } from "react";
 import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
+import { Button } from "tamagui";
 
 import CircleButton from "@/components/CircleButton";
 import Icon from "@/components/Icon";

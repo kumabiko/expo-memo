@@ -2,6 +2,7 @@ import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { onSnapshot, doc } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import { Button } from "tamagui";
 
 import CircleButton from "@/components/CircleButton";
 import Icon from "@/components/Icon";
@@ -43,6 +44,7 @@ const Detail = (): JSX.Element => {
       </View>
       <ScrollView style={styles.memoBody}>
         <Text style={styles.memoBodyText}>{memo?.bodyText}</Text>
+        <Button theme="blue">Hello world</Button>
       </ScrollView>
       <CircleButton
         onPress={() => {
